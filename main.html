@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="main.css"  rel="stylesheet" >
+	<title> RoseUp - HOME</title>
+</head>
+<body>
+   
+    <header>
+    <div class="navbar"> 
+        <a  href="main.html" class="logo" ><img src="cancer-du-sein.png"  calss="imgLogo">RoseUp</a>
+        <div class="link-nav">
+
+            <ul>
+                <li class="active"> <a href="main.html"><i class='bx bxs-home'></i>HOME</a></li>
+                <li><a href="donate.php"><i class='bx bxs-donate-heart'></i>DONATE</a></li>
+                <li><a href="register.php" ><i class="fa fa-fw fa-user"></i>Sign Up</a> </li>
+                <li> <a href="home.php">Log In</a></li>
+<!----------------------------------------------------Dark mode ---------------------------------------------------------------->
+                <li><i class='bx bxs-moon bx-flip-horizontal bx-tada' onclick="dark()" ></i></li>
+                <script>
+                    function dark() {
+                       var element = document.body;
+                       element.classList.toggle("dark-mode");
+                    }
+                </script>
+            </ul>
+
+        </div>  
+
+	</div>
+    <div class="titre">
+        <h1>Be there</h1>
+        <h3 id="text"></h3>
+        <script type="text/javascript">
+            var i = 0;
+            var text = "Before, during, after breast cancer";
+            
+            function typing() {
+                if (i < text.length) {
+                    document.getElementById("text").innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    document.getElementById("text").innerHTML = "";
+                    i = 0;
+                }
+            }
+            
+            setInterval(typing, 150);
+        </script>
+        <p>from December 1st to December 22nd, it’s “Discovery Month”</p>
+        <p>RoseUp is your online platform that offers you personalized and human support, to help you cope better with your cancer, from the moment you are diagnosed with the disease, during and after your treatments.</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12937.052315488192!2d10.6272781!3d35.8425522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027584510f3853%3A0x4a2185abf6d1d7c9!2sM%C3%B6venpick%20Sousse!5e0!3m2!1sfr!2stn!4v1702754284599!5m2!1sfr!2stn"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</header>
+
+    <article>
+        <p>To end the year 2023,we have a surprise for you!From December 1st to 22nd, we invite you to discover our personalized support on RoseUp!</p>
+        <p>During this “Discovery Month”, you will have access to some of <b>the webinars and workshops usually reserved for our members.</b></p>
+        <p> In the program : </p>
+        <ul>
+            <li><b>Art therapy, socio-aesthetics, socio-hairdressing</b> workshops…</li>
+            <li><b>Physiotherapy, reflexology, sophrology, meditation </b>and many more webinars!</li>
+            <li>If you are affected by <b>metastatic cancer: nutrition workshop and discussion time with a psychologist</b></li>
+        </ul>
+
+        <p>If you like this support, you can<b> fill out the form in the bottom take advantage of all the workshops and webinars</b> that will be offered .</p>
+        <p>We look forward to seeing you on  RoseUp event . To recive more about us, simply create your space in a few clicks to recive all our event in the futur.</p>
+        <p>Please don't forget to <b>donate to breast cancer.</b> You can help thousands <b>by clicking on the "Donate" button</b> at the top of the page and filling out the form.</p>   
+    </article>
+    <div class="button-container1">
+        <button class="button1" style="vertical-align:middle" onclick="myFunction()"><span>Click Me</span></button>
+    </div>
+    <div  id="myDIV" class="contenu">
+        <form >
+        <fieldset class="cadre">
+            <label for="no"  >First name</label>
+            <input type="text" name="nom" placeholder="First name" id="no" required />
+            <label for="nom">Last name</label>
+            <input type="text" name="nom" placeholder="Last name"/>
+            <label for="d">Date of birth</label>
+            <input type="date" name="d" id="d"/>
+            <label for="pays">Place of birth:</label>
+            <select name="pays" id="pays">
+              <option value="Tunis">Tunis</option>
+              <option value="Sousse">Sousse</option>
+              <option value="Sfax">Sfax</option>
+              <option value="Beja">Beja</option>
+            </select>
+            <label for="adr">Your email address</label>
+            <input type="email"name="E-mail"id="adr" placeholder="E-mail"/>
+            <label for="num">Your phone number</label>
+            <input type="tel" name="num"id="num"placeholder="phone number"/>
+            <div class="button">
+                <br><input type="submit" value="Send"/>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      } 
+    </script>
+    
+
+    <h4 class="glow" id="glowText">OUR TEAM EVENT</h4>
+
+<script>
+function startGlowAnimation() {
+  var glowText = document.getElementById("glowText");
+  glowText.classList.add("glow-animation");
+}
+
+function stopGlowAnimation() {
+  var glowText = document.getElementById("glowText");
+  glowText.classList.remove("glow-animation");
+}
+
+// Démarrer l'animation au chargement de la page
+window.addEventListener("load", startGlowAnimation);
+</script>
+
+    <div class="container">
+        
+        <img src="téléchargement (6).jpeg" alt="Avatar" class="image1">
+        <div class="overlay">Manager Ema </div>
+        <img src="téléchargement (4).jpeg" alt="Avatar" class="image2">
+        <div class="overlay1">voice John</div>
+        <img src="images (3).jpeg" alt="Avatar" class="image3">
+        <div class="overlay2"> HR  Olivia </div>
+        <img src="téléchargement (5).jpeg" alt="Avatar" class="image4">
+        <div class="overlay3">treasurer Dave</div>
+    </div>
+        <div class="content1">
+            <h5>Explore </h5>
+            <h5>Explore </h5>
+        </div>
+
+        <div class="content">     
+            <div class="galerie">
+               <img src="téléchargement (1).jpeg">
+               <img src="images (2).jpeg">
+               <img src="téléchargement (2).jpeg">
+               <img src="téléchargement (3).jpeg">
+            </div>
+            
+        </div>    
+    <div class="footbar">
+        <div class="social_icon">
+          <ul>
+            <li ><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li ><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li ><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+          </ul>
+        </div>
+        <div class="list" >
+            <ul >
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">services</a></li>
+            <li ><a href="#">About</a></li>
+            <li ><a href="#">Terms</a></li>
+            <li ><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="outfooter">
+          <p class="copyright">RoseUp@ 2023 by Akrout Amal</p>
+        </div>
+    
+    </div> 
+ 
+    <!-- -------------------------------------Cursor Animatio----------------------------------------------------->
+    
+ 
+
+  <script>
+ const body = document.querySelector("canvas");
+const ctx = canvas.getContext('2d');
+
+// for intro motion
+let mouseMoved = false;
+
+const pointer = {
+    x: .5 * window.innerWidth,
+    y: .5 * window.innerHeight,
+}
+const params = {
+    pointsNumber: 40,
+    widthFactor: .3,
+    mouseThreshold: .6,
+    spring: .4,
+    friction: .5
+};
+
+const trail = new Array(params.pointsNumber);
+for (let i = 0; i < params.pointsNumber; i++) {
+    trail[i] = {
+        x: pointer.x,
+        y: pointer.y,
+        dx: 0,
+        dy: 0,
+    }
+}
+
+window.addEventListener("click", e => {
+    updateMousePosition(e.pageX, e.pageY);
+});
+window.addEventListener("mousemove", e => {
+    mouseMoved = true;
+    updateMousePosition(e.pageX, e.pageY);
+});
+window.addEventListener("touchmove", e => {
+    mouseMoved = true;
+    updateMousePosition(e.targetTouches[0].pageX, e.targetTouches[0].pageY);
+});
+
+function updateMousePosition(eX, eY) {
+    pointer.x = eX;
+    pointer.y = eY;
+}
+
+setupCanvas();
+update(0);
+window.addEventListener("resize", setupCanvas);
+
+
+function update(t) {
+
+    // for intro motion
+    if (!mouseMoved) {
+        pointer.x = (.5 + .3 * Math.cos(.002 * t) * (Math.sin(.005 * t))) * window.innerWidth;
+        pointer.y = (.5 + .2 * (Math.cos(.005 * t)) + .1 * Math.cos(.01 * t)) * window.innerHeight;
+    }
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    trail.forEach((p, pIdx) => {
+        const prev = pIdx === 0 ? pointer : trail[pIdx - 1];
+        const spring = pIdx === 0 ? .4 * params.spring : params.spring;
+        p.dx += (prev.x - p.x) * spring;
+        p.dy += (prev.y - p.y) * spring;
+        p.dx *= params.friction;
+        p.dy *= params.friction;
+        p.x += p.dx;
+        p.y += p.dy;
+    });
+
+    ctx.lineCap = "round";
+   ctx.beginPath();
+    ctx.moveTo(trail[0].x, trail[0].y);
+
+    for (let i = 1; i < trail.length - 1; i++) {
+        const xc = .5 * (trail[i].x + trail[i + 1].x);
+        const yc = .5 * (trail[i].y + trail[i + 1].y);
+        ctx.quadraticCurveTo(trail[i].x, trail[i].y, xc, yc);
+        ctx.lineWidth = params.widthFactor * (params.pointsNumber - i);
+        ctx.stroke();
+    }
+    ctx.lineTo(trail[trail.length - 1].x, trail[trail.length - 1].y);
+    ctx.stroke();
+    
+    window.requestAnimationFrame(update);
+}
+
+function setupCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+  </script>
+
+</body>    
